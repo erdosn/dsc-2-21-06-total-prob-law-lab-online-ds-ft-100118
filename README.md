@@ -19,15 +19,7 @@ What is the probability of getting a red ball?
 
 ```python
 # Your solution
-0.5*(4/10) + 0.5*(6/10)
 ```
-
-
-
-
-    0.5
-
-
 
 ## Exercise 2
 A soccer team wins 60% of its games when it scores the first goal, and 10% of its games when the opposing team 
@@ -39,15 +31,7 @@ If the team scores the first goal about 30% of the time, what fraction of the ga
 ```python
 # Your solution
 # P(W|scored_first)
-0.30 * 0.60 + 0.70 * 0.10
 ```
-
-
-
-
-    0.25
-
-
 
 ## Exercise 3
 
@@ -71,31 +55,18 @@ Hint: Consult the theorems for conditional probability, check for dependence or 
 
 
 ```python
-# Your solution
-# P(fills and buys super 95) = P(fills) * P(super95)
-print("Probability that the next customer completely fills their tank and buys Super 95 is:")
-print((0.35*0.60))
-
-
-# P(fills) = sum [P(fill_i)]*[P(gas_i)]
-print("\nProbability that the next customer fills their tank is:")
-p2 = (0.40 * 0.30) + (0.35*0.60) + (0.25 * 0.50)
-print(p2)
-
-print("\nProbability that a customer bought Diesel given that they fill their tank is:")
-# P(Diesel|filled)
-print(0.40 * 0.30/p2)
+# solution a
 ```
 
-    Probability that the next customer completely fills their tank and buys Super 95 is:
-    0.21
-    
-    Probability that the next customer fills their tank is:
-    0.45499999999999996
-    
-    Probability that a customer bought Diesel given that they fill their tank is:
-    0.26373626373626374
 
+```python
+# solution b
+```
+
+
+```python
+# solution c
+```
 
 ## Exercise 4
 
@@ -109,34 +80,18 @@ Hint: Consult the theorems for conditional probability, check for dependence or 
 
 
 ```python
-# Your solution
-problem1 = "P(all flights are overbooked)"
-prob1 = (0.40)*(0.25)*(0.35)
-
-problem2 = "P(at least one flight is not overbooked)"
-prob2 = 1-prob1
-
-problem3 = "P(exactly one flight is overbooked)"
-prob3 = 0.60*0.65*0.25 + 0.60*0.35*0.75 + 0.40*0.65*0.75
-
-problems = [problem1, problem2, problem3]
-probs = [prob1, prob2, prob3]
-
-for problem, prob in zip(problems, probs):
-    print("{} = {}".format(problem, prob))
-    print("\n")
+# solutiona 
 ```
 
-    P(all flights are overbooked) = 0.034999999999999996
-    
-    
-    P(at least one flight is not overbooked) = 0.965
-    
-    
-    P(exactly one flight is overbooked) = 0.45
-    
-    
 
+```python
+# solution b
+```
+
+
+```python
+# solution c
+```
 
 ## Exercise 5
 You have three bags that each contain 100 marbles:
@@ -152,15 +107,8 @@ What is the probability that the chosen marble is red?
 
 
 ```python
-# Your solution
-import numpy as np
-problem = "P(red is chosen first)"
-prob = np.sum(1/3 * np.array([0.75, 0.60, 0.45]))
-print("{} = {}".format(problem, prob))
+# solution
 ```
-
-    P(red is chosen first) = 0.6
-
 
 ## Summary 
 
